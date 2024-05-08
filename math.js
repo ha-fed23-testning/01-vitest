@@ -22,6 +22,17 @@ if( isZero(27) ) {
 }
 
 
+// 1 En funktion som returnerar skillnaden mellan två tal.
+function subtract(x, y) {
+	return x - y
+}
 
-export { add, isZero }
+// 2 En funktion som returnerar tre gånger input.
+function triple(x) {
+	return x * 3
+}
+
+
+
+export { add, isZero, subtract, triple }
 
