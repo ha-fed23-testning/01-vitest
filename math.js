@@ -14,12 +14,12 @@ function isZero(value) {
 	return value === 0
 }
 
-if( isZero(0) ) {
+/*if( isZero(0) ) {
     console.log('Talet är noll')
 }
 if( isZero(27) ) {
     console.log('27 är inte noll')
-}
+}*/
 
 
 // 1 En funktion som returnerar skillnaden mellan två tal.

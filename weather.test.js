@@ -19,5 +19,10 @@ describe('isItRaining(moistureLevel)', () => {
 	it('throws an Error if moisture is less than 0', () => {
 		expect( () => isItRaining(-1) ).toThrow()
 	})
-	// TODO: gör klart testfall för ett värde större än 1 och ett värde som inte är en sträng.
+	it('throws an Error if moisture is greater than 1', () => {
+		expect( () => isItRaining(2) ).toThrow()
+	})
+	it('throws an Error if moisture is not a number', () => {
+		expect( () => isItRaining('£') ).toThrow()
+	})
 })
