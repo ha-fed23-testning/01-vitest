@@ -1,5 +1,5 @@
 import { describe, it, test, expect } from 'vitest'
-import { combineWords, trimma } from './words.js'
+import { combineWords, trimma, upperCase } from './words.js'
 /*
 3a En funktion som slår ihop två strängar.
 // Exempel: combineWords('anka', 'kod') === 'anka, kod'
@@ -47,6 +47,19 @@ function trimma(str) {}
 // trimma('abc') === 'abc'
 // trimma('hello!   ') === 'hello!'
 // trimma('  x  ') == 'x'
+*/
 
+describe('upperCase(str)', () => {
+	// returnera strängen fast alla små bokstäver ska göras om till stora
+	// kasta ett error om parametern inte är en sträng
+
+	it('returns the string with all lower case letters converted to upper case', () => {
+		expect( upperCase('five brown ducks') ).toBe('FIVE BROWN DUCKS')
+	})
+	it('throws an Error if parameter is not a string', () => {
+		expect( () => upperCase(3.14) ).toThrow()
+	})
+})
+/*
 3c En funktion som konverterar en sträng till versaler (stora bokstäver).
 */

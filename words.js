@@ -13,4 +13,11 @@ function trimma(str) {
 	return str.trim()
 }
 
-export { combineWords, trimma }
+function upperCase(str) {
+	if( typeof str !== 'string' ) {
+		throw new Error('Parameter must be a string')
+	}
+	return str.toUpperCase()
+}
+
+export { combineWords, trimma, upperCase }
