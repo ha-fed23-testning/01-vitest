@@ -6,4 +6,11 @@ function combineWords(a, b) {
 	return a + ', ' + b
 }
 
-export { combineWords }
+function trimma(str) {
+	if( (typeof str) !== 'string' ) {
+		throw new Error('Parameter must be a string')
+	}
+	return str.trim()
+}
+
+export { combineWords, trimma }
